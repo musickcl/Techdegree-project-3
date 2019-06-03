@@ -1,0 +1,180 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    color: #222;
+    background: #fff;
+    font-size: 12px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+/*---------- Header ----------*/
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    background: #354e67;
+    color: #f8f8ff;
+    margin-bottom: 20px;
+}
+header h3 {
+    padding: 20px 0px;
+}
+
+/*---------- Banner ----------*/
+
+.banner {
+    text-align: center;
+    /* padding: 30px 0px; */
+    margin-bottom: 25px;
+    border-bottom: 4px solid black;
+    box-shadow: 0px 3px 0px 0px white, 0px 5px 0px 0px black;
+}
+.banner h3 {
+    color: #354e67;
+}
+.banner p {
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+fieldset {
+    border: none;
+}
+.legend {
+    font-weight: bold;
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+}
+
+/*------- Contact Information -------*/
+
+.contact {
+    display: flex;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 29px;
+}
+.contact div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.contact li {
+    display: flex;
+    flex-direction: column;
+}
+.contact [id]:focus {
+    border: 1px solid #354e67;
+    box-shadow: 0px 1px 2px #354e67;
+    border-radius: 3px;
+    opacity: 1;
+}
+.contact input, select {
+    margin: 5px 0px;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding-left: 15px;
+}
+input::placeholder {
+    opacity: .5;
+    text-align: right;
+    padding-right: 7px;
+    font-size: 12px;
+}
+select {
+    opacity: .5;
+    padding-top: 5px;
+    font: inherit;
+}
+
+/*--------- Newsletter ---------*/
+
+.newsletter {
+    display: flex;
+}
+.newsletter div {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter ul {
+    padding-left: 8px;
+}
+.newsletter li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+.newsletter li + li {
+    padding-left: 10px;
+}
+li input {
+    cursor: pointer;
+}
+textarea {
+    border: none;
+    margin-bottom: 15px;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+#button {
+    background-color: #4ebbb5;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+    border-radius: 3px;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor: pointer !important;
+}
+footer {
+    margin-bottom: 60px;
+}
+/* Media Query */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header, .banner {
+        margin-bottom: 50px;
+    }
+    .banner p {
+        padding-bottom: 40px;
+    }
+    .container {
+        max-width: 769px;
+    }
+    .contact li {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .contact label {
+        flex: 0 0 150px;
+    }
+    .contact input, select {
+        flex: 1;
+        height: 40px;
+    }
+}
