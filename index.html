@@ -20,32 +20,31 @@
 
         <form class="item" action="index.html" method="post">
                 <fieldset class="contact">
-                    <div>
                         <legend class="legend">Contact Information</legend>
                         <ul>
                             <li>
                                 <label for="name">Full Name</label>
-                                <input type="text" name="user_name" id="name" placeholder="Required">
+                                <input required  id="name" type="text" name="user_name" placeholder="Required">
                             </li>
                             <li>
                                 <label for="email">Email Address</label>
-                                <input type="email" name="user_email" id="email" placeholder="Required">
+                                <input required  id="email" type="email" name="user_email" placeholder="Required">
                             </li>
                             <li>
                                 <label for="phone">Phone Number</label>
-                                <input type="number" name="user_phone" id="phone" placeholder="Required">
+                                <input  id="phone" type="number" name="user_phone">
                             </li>
                             <li>
                                 <label for="address">Street Address</label>
-                                <input type="text" name="user_address" id="address" placeholder="Required">
+                                <input  id="address" type="text" name="user_address">
                             </li>
                             <li>
                                 <label for="city">City</label>
-                                <input type="text" name="user_city" id="city" placeholder="Required">
+                                <input  id="city" type="text" name="user_city">
                             </li>
                             <li>
                                 <label for="state">State</label>
-                                <select name="user_state" id="state">
+                                <select  id="state" name="user_state">
                                     <option value="">Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -102,42 +101,42 @@
                             </li>				
                             <li>
                                 <label for="zipcode">Zip Code</label>
-                                <input type="number" name="user_zipcode" id="zipcode" placeholder="Required">
+                                <input  id="zipcode" type="number" name="user_zipcode">
                             </li>
                         </ul>
-                    </div>
+                    
                 </fieldset>
 
                 <fieldset class="newsletter">
+                    <legend class="legend">Newsletter</legend>
                     <div>
-                        <legend class="legend">Newsletter</legend>
                         <ul>
                             <li>Select the newsletters you would like to receive.</li>
                             <li>
-                                <input type="checkbox" name="html_news" id="htmlNews">
+                                <input  id="htmlNews" type="checkbox" name="html_news">
                                 <label for="htmlNews">HTML News</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="css_news" id="css">
+                                <input  id="css" type="checkbox" name="css_news">
                                 <label for="css">CSS News</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="javascript_news" id="javascript">
+                                <input  id="javascript" type="checkbox" name="javascript_news">
                                 <label for="javascript">Javascript News</label>
                             </li>
                         </ul>
                         <ul>
                             <li>Newsletter format</li>
                             <li>
-                                <input type="radio" name="format" id="htmlText">
+                                <input  id="htmlText" type="radio" name="format">
                                 <label for="htmlText">HTML</label>
                             </li>
                             <li>
-                                <input type="radio" name="format" id="plain">
+                                <input  id="plain" type="radio" name="format">
                                 <label for="plain">Plain text</label>
                             </li>
                         </ul>
-                        <textarea name="topics" id="topics" cols="30" rows="8"></textarea>
+                        <textarea  id="topics" name="topics" cols="30" rows="8" placeholder="&nbsp;Your Message Here"></textarea>
                         <button id="button" type="submit">Sign Up</button>
                     </div>
                 </fieldset>

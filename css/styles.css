@@ -16,7 +16,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 20px 20px;
+    background-color: #BAC7BE;
 }
 
 /*---------- Header ----------*/
@@ -28,7 +29,6 @@ header {
     width: 100%;
     background: #354e67;
     color: #f8f8ff;
-    margin-bottom: 20px;
 }
 header h3 {
     padding: 20px 0px;
@@ -41,10 +41,11 @@ header h3 {
     /* padding: 30px 0px; */
     margin-bottom: 25px;
     border-bottom: 4px solid black;
-    box-shadow: 0px 3px 0px 0px white, 0px 5px 0px 0px black;
+    box-shadow: 0px 3px 0px 0px #BAC7BE, 0px 5px 0px 0px black;
 }
 .banner h3 {
     color: #354e67;
+    padding-bottom: 4px;
 }
 .banner p {
     padding-top: 5px;
@@ -67,11 +68,7 @@ fieldset {
     padding-bottom: 30px;
     margin-bottom: 29px;
 }
-.contact div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 .contact ul {
     display: flex;
     flex-direction: column;
@@ -81,11 +78,15 @@ fieldset {
     display: flex;
     flex-direction: column;
 }
+.contact [id] {
+    transition: background-color .6s ease-in-out;
+}
 .contact [id]:focus {
     border: 1px solid #354e67;
     box-shadow: 0px 1px 2px #354e67;
-    border-radius: 3px;
+    border-radius: 4px;
     opacity: 1;
+    background-color: #909EAC;  
 }
 .contact input, select {
     margin: 5px 0px;
@@ -93,6 +94,11 @@ fieldset {
     outline: none;
     height: 30px;
     padding-left: 15px;
+    border-radius: 4px;
+}
+::placeholder {
+    opacity: .5;
+    font-size: 12px
 }
 input::placeholder {
     opacity: .5;
@@ -136,20 +142,24 @@ textarea:focus {
     outline: none;
     border: 1px solid black;
 }
-
 #button {
     background-color: #4ebbb5;
     color: white;
     border: none;
     font-family: inherit;
     font-size: 18px;
-    border-radius: 3px;
+    border-radius: 4px;
     height: 50px;
     margin-bottom: 30px;
-    cursor: pointer !important;
 }
 footer {
-    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    width: 100%;
+    background: #354e67;
+    color: #f8f8ff;
 }
 /* Media Query */
 @media (min-width: 768px) {
@@ -176,5 +186,8 @@ footer {
     .contact input, select {
         flex: 1;
         height: 40px;
+    }
+    footer {
+        margin-top: 50px;
     }
 }
