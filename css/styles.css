@@ -33,6 +33,10 @@ header {
 header h3 {
     padding: 20px 0px;
 }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 /*---------- Banner ----------*/
 
@@ -122,7 +126,8 @@ select {
     flex-direction: column;
 }
 .newsletter ul {
-    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
 }
 .newsletter li {
     list-style: none;
@@ -131,16 +136,20 @@ select {
 .newsletter li + li {
     padding-left: 10px;
 }
-li input {
-    cursor: pointer;
-}
 textarea {
     border: none;
+    padding-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 textarea:focus {
     outline: none;
     border: 1px solid black;
+}
+#textbox {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
 }
 #button {
     background-color: #4ebbb5;

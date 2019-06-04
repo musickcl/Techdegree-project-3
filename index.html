@@ -32,7 +32,7 @@
                             </li>
                             <li>
                                 <label for="phone">Phone Number</label>
-                                <input  id="phone" type="number" name="user_phone">
+                                <input  id="phone" type="tel" name="user_phone">
                             </li>
                             <li>
                                 <label for="address">Street Address</label>
@@ -135,12 +135,14 @@
                                 <input  id="plain" type="radio" name="format">
                                 <label for="plain">Plain text</label>
                             </li>
+                            <li id="textbox">
+                                <label for="topics">Other topics you'd like to hear about.</label>
+                                <textarea  id="topics" name="topics" cols="30" rows="8" placeholder="&nbsp;Your Message Here"></textarea>
+                            </li>
                         </ul>
-                        <textarea  id="topics" name="topics" cols="30" rows="8" placeholder="&nbsp;Your Message Here"></textarea>
-                        <button id="button" type="submit">Sign Up</button>
                     </div>
                 </fieldset>
-            
+            <button id="button" type="submit">Sign Up</button>
         </form>
     </div>
     <footer>
